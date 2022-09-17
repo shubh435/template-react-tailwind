@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Banner from "./Components/Banner";
 import DrawerAppBar from "./Components/DrawerAppBar";
+import Footer from "./Components/Footer";
 import Partner from "./Components/Partner";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <DrawerAppBar />
       <Banner />
       <Partner />
+      <Footer />
     </div>
   );
 }

@@ -34,7 +34,11 @@ export default class Banner extends Component {
                   dolor sit amet consectetur adipis
                 </p>
 
-                <Button variant="contained" color="info" sx={{ mt: 10 }}>
+                <Button
+                  variant="contained"
+                  color="info"
+                  sx={{ mt: 10, bgcolor: "#212529" }}
+                >
                   {" "}
                   explore
                 </Button>

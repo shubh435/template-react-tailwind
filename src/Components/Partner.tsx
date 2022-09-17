@@ -1,4 +1,11 @@
-import { Button, Container, Grid } from "@mui/material";
+import {
+  Button,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import React, { Component } from "react";
 
@@ -62,7 +69,10 @@ export default class Partner extends Component {
                   />
                 </Box>
 
-                <Button variant="contained" sx={{ mt: 5, mb: 5 }}>
+                <Button
+                  variant="contained"
+                  sx={{ mt: 5, mb: 5, bgcolor: "#212529" }}
+                >
                   Learn more
                 </Button>
               </Grid>
@@ -87,7 +97,10 @@ export default class Partner extends Component {
                     nobis blanditiis neque voluptatem exercitationem provident,
                     at tempore sint eaque dolores earum veritatis.
                   </p>
-                  <Button variant="contained" sx={{ mt: 5, mb: 5 }}>
+                  <Button
+                    variant="contained"
+                    sx={{ mt: 5, mb: 5, bgcolor: "#212529" }}
+                  >
                     Learn more
                   </Button>
                 </Box>
@@ -108,7 +121,10 @@ export default class Partner extends Component {
                     nobis blanditiis neque voluptatem exercitationem provident,
                     at tempore sint eaque dolores earum veritatis.
                   </p>
-                  <Button variant="contained" sx={{ mt: 5, mb: 5 }}>
+                  <Button
+                    variant="contained"
+                    sx={{ mt: 5, mb: 5, bgcolor: "#212529" }}
+                  >
                     Learn more
                   </Button>
                 </Box>
@@ -125,7 +141,7 @@ export default class Partner extends Component {
             </Grid>
           </Box>
 
-          <Box>
+          <Box sx={{ mt: 10 }}>
             <Grid container>
               <Grid item xs={12}>
                 <Box>
@@ -146,8 +162,142 @@ export default class Partner extends Component {
                 </Box>
               </Grid>
               <Grid item xs={12}>
-                <Box></Box>
-                <Button variant="contained">View Team</Button>
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-evenly",
+                    my: 5,
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <Card sx={{ maxWidth: 275, px: "auto", mt: 1, mx: "auto" }}>
+                    <CardContent>
+                      <Box
+                        sx={{
+                          textAlign: "center",
+                          mx: "auto",
+                          mb: 5,
+                        }}
+                      >
+                        <img
+                          src={require("../images/card1.png")}
+                          alt=""
+                          style={{ objectFit: "contain" }}
+                        />
+                      </Box>
+                      <Typography
+                        sx={{ fontSize: 18 }}
+                        color="seagreen"
+                        gutterBottom
+                      >
+                        Peg Legge
+                      </Typography>
+                      <Typography
+                        sx={{ fontSize: 14 }}
+                        color="text.secondary"
+                        gutterBottom
+                      >
+                        CEO
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                  <Card sx={{ maxWidth: 275, px: "auto", mt: 1, mx: "auto" }}>
+                    <CardContent>
+                      <Box
+                        sx={{
+                          textAlign: "center",
+                          mx: "auto",
+                          mb: 5,
+                        }}
+                      >
+                        <img
+                          src={require("../images/card2.png")}
+                          alt=""
+                          style={{ objectFit: "contain" }}
+                        />
+                      </Box>
+                      <Typography
+                        sx={{ fontSize: 18 }}
+                        color="seagreen"
+                        gutterBottom
+                      >
+                        Richard Guerra
+                      </Typography>
+                      <Typography
+                        sx={{ fontSize: 14 }}
+                        color="text.secondary"
+                        gutterBottom
+                      >
+                        CTO
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                  <Card sx={{ maxWidth: 275, px: "auto", mt: 1, mx: "auto" }}>
+                    <CardContent>
+                      <Box
+                        sx={{
+                          textAlign: "center",
+                          mx: "auto",
+                          mb: 5,
+                        }}
+                      >
+                        <img
+                          src={require("../images/card3.png")}
+                          alt=""
+                          style={{ objectFit: "contain" }}
+                        />
+                      </Box>
+                      <Typography
+                        sx={{ fontSize: 18 }}
+                        color="seagreen"
+                        gutterBottom
+                      >
+                        Alexandro store
+                      </Typography>
+                      <Typography
+                        sx={{ fontSize: 14 }}
+                        color="text.secondary"
+                        gutterBottom
+                      >
+                        Designer
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                  <Card sx={{ maxWidth: 275, px: "auto", mt: 1, mx: "auto" }}>
+                    <CardContent>
+                      <Box
+                        sx={{
+                          textAlign: "center",
+                          mx: "auto",
+                          mb: 5,
+                        }}
+                      >
+                        <img
+                          src={require("../images/card3.png")}
+                          alt=""
+                          style={{ objectFit: "contain" }}
+                        />
+                      </Box>
+                      <Typography
+                        sx={{ fontSize: 18 }}
+                        color="seagreen"
+                        gutterBottom
+                      >
+                        Jannet Bray
+                      </Typography>
+                      <Typography
+                        sx={{ fontSize: 14 }}
+                        color="text.secondary"
+                        gutterBottom
+                      >
+                        Developer
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Box>
+                <Button variant="contained" sx={{ bgcolor: "#212529" }}>
+                  View Team
+                </Button>
               </Grid>
             </Grid>
           </Box>
