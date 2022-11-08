@@ -3,6 +3,9 @@ import { Container } from "@mui/system";
 import React, { Component } from "react";
 
 export default class Footer extends Component {
+
+
+  
   render() {
     return (
       <Box sx={{ bgcolor: "#74C69D", width: "100%", py: 2, mt: 5 }}>
